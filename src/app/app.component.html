@@ -1,0 +1,15 @@
+<nz-table #nzTable nzBordered [nzData]="listOfData" [nzShowPagination]="false">
+            <thead>
+              <tr>
+               
+                <th colspan="2">起止地点</th>
+            
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let data of nzTable.data" class="editable-row">
+            
+                <td colspan="2">
+                  <nz-range-picker [nzFormat]="dateFormat"></nz-range-picker>
+                </td>
+              </tr></tbody></nz-table>
